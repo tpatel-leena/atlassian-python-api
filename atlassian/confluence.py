@@ -569,7 +569,7 @@ class Confluence(AtlassianRestAPI):
         """
         return self.get_all_pages_from_space_raw(
             space=space, start=start, limit=limit, status=status, expand=expand, content_type=content_type
-        ).get("results")
+        )
 
     def get_all_pages_from_space_trash(self, space, start=0, limit=500, status="trashed", content_type="page"):
         """
